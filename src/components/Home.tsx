@@ -9,13 +9,14 @@ import Card from 'react-bootstrap/Card'
 const Home = () => {
     return (
         <div>
-            <div className='bg-light-grey'>
-                <Marquee>***Admissions open for year 2022***</Marquee>
-            </div>
             <SchoolImg />
-         
-            <div className="mid-background shadow p-3 mb-5  rounded mt-3">
-                       <p>React Hook useEffect has a missing dependency: 'dispatch'. Either include it or remove the dependency array</p>
+            <div className=' mt-2'>
+                <Marquee>***Welcome to learning curve public school Admissions open for year 2022***</Marquee>
+            </div>
+
+            <div className="mid-background1 shadow p-3 mb-5  rounded mt-3">
+                <p className="brand ">
+                    DPS Pune is one of the most trusted name in quality education, which is recognized throughout the academic world for its progressive approach and commitment to excellence..The school offers courses that focus on holistic development of individuals by cultivating their unique talents.</p>
             </div>
 
             <div className="container-fluid mt-5 ">
@@ -51,7 +52,7 @@ const Home = () => {
                     <div className="col-md-6 mt-3">
 
                         <img
-                             className="m-2"
+                            className="m-2"
                             src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNjaG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
                             height={250} width={350}
                         />

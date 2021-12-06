@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"');
 .App {
   text-align: center;
 
@@ -57,6 +58,15 @@ background-color:rgb(167, 163, 163)
 }
 .brand{
     justify-content: center;
+    font-family: 'Kaushan Script', cursive;
+    margin-top:5px
+    /* color: #7c795d; 
+    font-family: 'Trocchi'; 
+    font-size: 45px; 
+    font-weight: normal; 
+    line-height: 48px;
+     margin: 0; */
+    
 }
 
 .align{
@@ -66,6 +76,9 @@ background-color:rgb(167, 163, 163)
 .mid-background{
   background-color: rgb(196, 184, 79);
  
+}
+.mid-background1{
+  background-color: rgb(226, 183, 135);
 }
 
 /* social-flow */
@@ -104,4 +117,33 @@ a.instagram {
   to {
     transform: rotate(360deg);
   }
+}
+
+.left-float{
+  float: left;
+  margin-left: 20px;
+}
+
+.AboutImg{
+  /* background: url('https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNjaG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60') center center no-repeat; */
+  background: url('https://images.unsplash.com/photo-1561089489-f13d5e730d72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60') center center no-repeat;
+  background-size:cover;
+  opacity: 70%;
+  
+}
+.banner{
+  width: 100%;
+  padding: 15% 0;
+  text-align: center;
+color: aliceblue;
+  /* background: rgba(248, 248, 248, 0.966); */
+}
+
+.contentWhite{
+    padding: 40px 7%;
+    z-index: -5;
+}
+.grey-back{
+  background-color: rgb(179, 178, 178);
+  padding: 40px 7%;
 }

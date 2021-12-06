@@ -1,31 +1,38 @@
 import React from 'react'
-import { Navbar,Nav, Container } from 'react-bootstrap'
-import {RiHome4Fill} from 'react-icons/ri'
+import { Navbar, Nav, Container } from 'react-bootstrap'
+import { RiHome4Fill } from 'react-icons/ri'
 import SocialFlow from './SocialFlow';
+import { BsEnvelopeFill,BsFillTelephoneFill } from "react-icons/bs";
 
 const Header = () => {
-    return (  
-      <>      
+  return (
+    <>
       <div className="mid-background">
         <div className="row">
-        <h2 className="col-10 brand">Learning Curve Public School</h2>
-        <img className=" col-2"src="https://image.freepik.com/free-vector/luxury-university-logo-design_139869-120.jpg" height={80} width={100} />
+          <div className="col-2">           
+             <p><BsEnvelopeFill/> - lpcs@learningcurve.in</p>
+             <p><BsFillTelephoneFill/> - 98566789003</p>
+          </div>
+          <div className="col-8 mt-2">
+            <h2 className="brand">Learning Curve Public School</h2>
+          </div>
+          <img className=" col-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaB4CHykC98nx88R8FaFixtJ3PEuQvIEcyZQ&usqp=CAU" height={80} width={100} />
         </div>
-     
+
       </div>
-        <Navbar bg="light" variant="light">
-          <Container>
+      <Navbar bg="light" variant="light" >
+        <Container>
           <Navbar.Brand href="/home"><RiHome4Fill /></Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/about">About us</Nav.Link>
             <Nav.Link href="/admission">Admission</Nav.Link>
             <Nav.Link href="/contact">Contact us</Nav.Link>
-          </Nav>         
-                <SocialFlow/>          
-          </Container>
-        </Navbar>
-        </>
-    )
+          </Nav>
+          <SocialFlow />
+        </Container>
+      </Navbar>
+    </>
+  )
 }
 
 export default Header
