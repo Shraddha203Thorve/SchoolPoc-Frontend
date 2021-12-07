@@ -10,15 +10,13 @@ import { setAdmissionGrades } from '../../reducer/AdmissionReducer'
 
 const Admission = (): ReactElement => {
 
-    const grades = useSelector((state: MainState) => {
-        if (state.admission)
-            state.admission.value
-    }
+    const grades = useSelector((state: MainState) => 
+        state.admission.value
     )
     const dispatch = useDispatch()
 
     useEffect(() => {
-        axios.get('http://localhost:8081/api/admission/')
+        axios.get('http://schoolserver-env.eba-g3pctvxk.us-east-1.elasticbeanstalk.com/api/admission')
              .then(({ data }) => dispatch(setAdmissionGrades(data)))
              .catch(() => console.log('Error while fetching'))
     }, [])
