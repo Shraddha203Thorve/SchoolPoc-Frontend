@@ -10,12 +10,13 @@ import Table from 'react-bootstrap/Table'
 
 
 const PrePrimary = (): ReactElement => {
-
-    const grades = useSelector((state: MainState) => state.admission.value)
+    var value=[1,2,3]
+    const grades = useSelector((state: MainState) =>
+     state.admission.value)
     const dispatch = useDispatch()
 
     useEffect(() => {
-        axios.get('http://localhost:4000/api/admission/Pre-primary')
+        axios.get('http://localhost:8081/api/admission/Pre-primary')
             .then(({ data }) => dispatch(setAdmissionGrades(data)))
             .catch(() => console.log('Error while fetching'))
     }, [])

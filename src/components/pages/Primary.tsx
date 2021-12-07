@@ -14,7 +14,7 @@ const Primary = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        axios.get('http://localhost:4000/api/admission/Primary')
+        axios.get('http://localhost:8081/api/admission/Primary')
             .then(({ data }) => dispatch(setAdmissionGrades(data)))
             .catch(() => console.log('Error while fetching'))
     }, [])

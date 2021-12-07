@@ -14,7 +14,7 @@ const Secondary = () => {
     const dispatch =useDispatch()
 
     useEffect(() => {      
-        axios.get('http://localhost:4000/api/admission/Secondary')
+        axios.get('http://localhost:8081/api/admission/Secondary')
         .then(({data})=>dispatch(setAdmissionGrades(data)))
         .catch(()=>console.log('Error while fetching'))
      }, [])

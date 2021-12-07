@@ -1,8 +1,8 @@
-import React from 'react';
-import { render } from '@testing-library/react';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import Primary from "../components/pages/Primary";
 
-import App from './App';
-
+import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 
@@ -11,11 +11,11 @@ describe('With React Testing Library', () => {
     const mockStore = configureStore();
     let store;
 
-    it('Shows "Hello world!"', () => {
+    it('Render component', () => {
         store = mockStore(initialState);
         const { getByText } = render(
             <Provider store={store}>
-                <App />
+                <BrowserRouter><Primary/></BrowserRouter>              
             </Provider>
         );
 
