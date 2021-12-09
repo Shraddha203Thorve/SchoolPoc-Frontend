@@ -12,6 +12,8 @@ import PageNotFound from './components/pages/PageNotFound';
 import PrePrimary from './components/pages/PrePrimary';
 import Primary from './components/pages/Primary';
 import Secondary from './components/pages/Secondary';
+import Login from './components/pages/Login';
+import StudentPage from './components/pages/StudentPage';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
        <Route path="/pre-primary" element={<PrePrimary/>}/>
        <Route path="/primary" element={<Primary/>}/>
        <Route path="/secondary" element={<Secondary/>}/>
+       <Route path="/login" element={<Login/>}/>
+       <Route path="/student" element={<StudentPage/>}/>
       </Routes>
       </BrowserRouter>
       <Footer/>

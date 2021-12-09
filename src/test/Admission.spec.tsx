@@ -16,14 +16,14 @@ describe('With React Testing Library', () => {
     const mockStore = configureStore();
     let store;
 
-    it('Render component', () => {
-        store = mockStore(initialState);
-        const { getByText } = render(
-            <Provider store={store}>
-                <BrowserRouter><Admission/></BrowserRouter>              
-            </Provider>
-        );
-    });
+    // it('Render component', () => {
+    //     store = mockStore(initialState);
+    //     const { getByText } = render(
+    //         <Provider store={store}>
+    //             <BrowserRouter><Admission/></BrowserRouter>              
+    //         </Provider>
+    //     );
+    // });
 
     
   test('fetches successfully data from an API', async () => {

@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import AdmissionReducer from "../reducer/AdmissionReducer";
+import StudentReducer from "../reducer/StudentReducer";
 
 export const store=configureStore({
     reducer:{
-        admission:AdmissionReducer
+        admission:AdmissionReducer,
+        student:StudentReducer
     }
 })
 

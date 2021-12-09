@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap");
+
 .App {
   text-align: center;
 
@@ -44,7 +46,8 @@
 background-color:rgb(167, 163, 163)
 }
 .back{
-  background-color: rgb(167, 163, 163);
+  background-color: rgb(36, 35, 35);
+  color: white;
 }
 .content {
   flex: 1 0 auto;
@@ -65,10 +68,12 @@ background-color:rgb(167, 163, 163)
     font-size: 45px; 
     font-weight: normal; 
     line-height: 48px;
-     margin: 0; */
-    
+     margin: 0; */  
 }
-
+.marque{
+  font-family: 'Balsamiq Sans';
+  color: #e94e40;
+}
 .align{
   margin-top: 10px;
   text-align: left;
@@ -79,6 +84,9 @@ background-color:rgb(167, 163, 163)
 }
 .mid-background1{
   background-color: rgb(226, 183, 135);
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
 }
 
 /* social-flow */
@@ -131,11 +139,20 @@ a.instagram {
   opacity: 70%;
   
 }
+
+.AdmissionImg{
+  /* background: url('https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNjaG9vbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60') center center no-repeat; */
+  background: url('https://images.unsplash.com/photo-1519406596751-0a3ccc4937fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60') center center no-repeat;
+  background-size:cover;
+  opacity: 70%;
+  
+}
+
 .banner{
   width: 100%;
   padding: 15% 0;
   text-align: center;
-color: aliceblue;
+  color: white;
   /* background: rgba(248, 248, 248, 0.966); */
 }
 
@@ -144,6 +161,20 @@ color: aliceblue;
     z-index: -5;
 }
 .grey-back{
-  background-color: rgb(179, 178, 178);
+  background-color: rgb(70, 67, 67);
   padding: 40px 7%;
+}
+
+.card{
+  background-color: rgb(232, 250, 184);
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes example {
+  from {width: 0px;}
+  to {width: 100%;}
 }

@@ -1,16 +1,15 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import PrePrimary from "../components/pages/PrePrimary";
-
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
+import Secondary from "../components/pages/Secondary";
 import axios from 'axios'
 
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 
-describe('PrePrimary with React Testing Library', () => {
+describe('Primary with React Testing Library', () => {
     const initialState = { output: 10 };
     const mockStore = configureStore();
     let store;
@@ -19,7 +18,7 @@ describe('PrePrimary with React Testing Library', () => {
     //     store = mockStore(initialState);
     //     const { getByText } = render(
     //         <Provider store={store}>
-    //             <BrowserRouter><PrePrimary/></BrowserRouter>              
+    //             <BrowserRouter><Secondary/></BrowserRouter>              
     //         </Provider>
     //     );
     // });
@@ -29,7 +28,7 @@ describe('PrePrimary with React Testing Library', () => {
         mockedAxios.get.mockResolvedValue( { data: {} } );
         const { getByText } = render(
             <Provider store={store}>
-                <BrowserRouter><PrePrimary/></BrowserRouter>              
+                <BrowserRouter><Secondary/></BrowserRouter>              
             </Provider>
         );
         expect(mockedAxios.get).toHaveBeenCalled();
@@ -41,9 +40,9 @@ describe('PrePrimary with React Testing Library', () => {
         mockedAxios.get.mockRejectedValue( { data: {} } );
         const { getByText } = render(
             <Provider store={store}>
-                <BrowserRouter><PrePrimary/></BrowserRouter>              
+                <BrowserRouter><Secondary/></BrowserRouter>              
             </Provider>
         );
         expect(mockedAxios.get).toHaveBeenCalled();
       });
-    })
+});

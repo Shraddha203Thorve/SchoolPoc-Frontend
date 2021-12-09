@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <SchoolImg />
             <div className=' mt-2'>
-                <Marquee>***Welcome to learning curve public school Admissions open for year 2022***</Marquee>
+                <Marquee className="marque">***Welcome to learning curve public school Admissions open for year 2022***</Marquee>
             </div>
 
             <div className="mid-background1 shadow p-3 mb-5  rounded mt-3">

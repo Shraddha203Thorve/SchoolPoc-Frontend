@@ -10,11 +10,14 @@ import Table from 'react-bootstrap/Table'
 
 const Primary = () => {
 
-    const grades = useSelector((state: MainState) => state.admission.value)
+    const grades = useSelector((state: MainState) =>  { 
+        if(state.admission)
+       {return state.admission.value} 
+    })
     const dispatch = useDispatch()
 
     useEffect(() => {
-        axios.get('http://schoolserver-env.eba-g3pctvxk.us-east-1.elasticbeanstalk.com/api/admission/Primary')
+        axios.get('http://localhost:4000/api/admission/Primary')
             .then(({ data }) => dispatch(setAdmissionGrades(data)))
             .catch(() => console.log('Error while fetching'))
     }, [])
@@ -32,17 +35,22 @@ const Primary = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {grades.map((grade) => (
-                            <>
-                                {grade.options.map((option) =>
-                                    <tr>
-                                        <td>{option.grade}</td>
-                                        <td>{option.fees}</td>
-                                        <td>{option.seats}</td>
-                                    </tr>
-                                )}
-                            </>
-                        ))}
+                       
+                                    {
+                                        grades&&grades.map((grade) => (
+                                            <>
+                                                {grade.options.map((option) =>
+                                                    <tr>
+                                                        <td>{option.grade}</td>
+                                                        <td>{option.fees}</td>
+                                                        <td>{option.seats}</td>
+                                                    </tr>
+                                                )}
+                                            </>
+                                        ))}
+
+                       
+
 
                     </tbody>
                 </Table>

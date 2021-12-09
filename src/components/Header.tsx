@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 import { RiHome4Fill } from 'react-icons/ri'
 import SocialFlow from './SocialFlow';
 import { BsEnvelopeFill,BsFillTelephoneFill } from "react-icons/bs";
+import logo from './logo.jpeg';
 
 const Header = () => {
   return (
@@ -16,7 +17,7 @@ const Header = () => {
           <div className="col-8 mt-2">
             <h2 className="brand">Learning Curve Public School</h2>
           </div>
-          <img className=" col-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaB4CHykC98nx88R8FaFixtJ3PEuQvIEcyZQ&usqp=CAU" height={80} width={100} />
+          <img className=" col-2" src={logo} height={80} width={100} />
         </div>
 
       </div>
