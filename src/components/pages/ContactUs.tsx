@@ -1,5 +1,6 @@
 import React from 'react'
 import SchoolImg from '../SchoolImg'
+import GoogleMap from './GoogleMap'
 // import {
 //     Box,
 //     Container,
@@ -12,8 +13,8 @@ import SchoolImg from '../SchoolImg'
 const ContactUs = () => {
     return (
         <div>
-            <SchoolImg />
-            <p>Contact us page</p>
+            <GoogleMap/>
+            <p></p>
             {/* <Box> */}
            
         </div>

@@ -25,7 +25,7 @@ const Home = () => {
                         <Card border="secondary" className="align shadow p-3 mb-5 bg-white rounded" >
                             {/* <Card.Header>Header</Card.Header> */}
                             <Card.Body>
-                                <Card.Title>Welcome to LCPS</Card.Title>
+                                <Card.Title className="brand heading">Welcome to LCPS</Card.Title>
                                 <Card.Text>
                                     Top schools in Pune have always attracted students from all over the country and abroad, and in such an environment The Orbis Schools are the preferred choice of parents seeking admission to good schools in Pune.
 
@@ -62,7 +62,7 @@ const Home = () => {
                         <Card border="secondary" className="align shadow p-3 mb-5 bg-white rounded" >
                             {/* <Card.Header>Header</Card.Header> */}
                             <Card.Body>
-                                <Card.Title>Celebrate Learning</Card.Title>
+                                <Card.Title className="brand heading">Celebrate Learning</Card.Title>
                                 <Card.Text>
                                     Celebrate Learning at The Orbis Schools is a process designed to turn work into play. Limitless opportunities to explore and experiment, get involved in fests and concerts, work for exhibitions and workshops, participate in trips and sports, in an atmosphere which is stress-free, secure, stimulating and rewarding will make learning one's experience of a celebratory kind.
                                 </Card.Text>

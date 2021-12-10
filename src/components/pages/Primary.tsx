@@ -23,8 +23,11 @@ const Primary = () => {
     }, [])
     return (
         <div>
-            <SchoolImg />
-            <p>primary</p>
+             <div className='left-float'>
+                    <Link to='home' className="link">Home/</Link>
+                </div>
+            {/* <SchoolImg /> */}
+            <p className="heading">Admission for primary</p>
             <div className="wd">
                 <Table striped bordered hover size="sm">
                     <thead>

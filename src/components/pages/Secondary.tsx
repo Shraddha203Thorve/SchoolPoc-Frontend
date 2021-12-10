@@ -24,8 +24,11 @@ const Secondary = () => {
 
     return (
         <div>
-            <SchoolImg />
-            <p>Secondary</p>
+             <div className='left-float'>
+                    <Link to='home' className="link">Home/</Link>
+                </div>
+            {/* <SchoolImg /> */}
+            <p className="heading">Admission for Secondary</p>
             <div className="wd">
                 <Table striped bordered hover size="sm">
                     <thead>

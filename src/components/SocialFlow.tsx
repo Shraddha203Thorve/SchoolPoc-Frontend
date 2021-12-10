@@ -12,19 +12,19 @@ export default function SocialFlow() {
         <div>
 
             <a
-                href="https://www.youtube.com/c/jamesqquick"
+                href="https://www.youtube.com/user/persistentsys"
                 className="youtube social"
             >
                 <FontAwesomeIcon icon={faYoutube} size="1x" />
             </a>
 
             <a
-                href="https://www.facebook.com/learnbuildteach/"
+                href="https://www.facebook.com/persistentsys/"
                 className="facebook social"
             >
                 <FontAwesomeIcon icon={faFacebook} size="1x" />
             </a>
-            <a href="https://www.twitter.com/jamesqquick" className="twitter social">
+            <a href="https://twitter.com/Persistentsys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" className="twitter social">
                 <FontAwesomeIcon icon={faTwitter} size="1x" />
             </a>
             <a

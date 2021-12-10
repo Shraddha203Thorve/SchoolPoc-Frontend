@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import { Link } from 'react-router-dom'
 import SchoolImg from '../SchoolImg'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
@@ -9,8 +10,9 @@ import Table from 'react-bootstrap/Table'
 
 
 
+
 const PrePrimary = (): ReactElement => {
-    
+   
     const grades = useSelector((state: MainState) => 
         { if(state.admission)
             {return state.admission.value}
@@ -27,8 +29,12 @@ const PrePrimary = (): ReactElement => {
 
     return (
         <div>
-            <SchoolImg />
-            <p>Preprimary</p>
+                 <div className='left-float'>
+                    <Link to='home' className="link">Home/</Link>
+                </div>
+            {/* <SchoolImg /> */}
+            <p className="heading">Admission for Preprimary</p>
+            <div>
             <div className="wd">
                 <Table striped bordered hover size="sm" className="bg-grey" >
                     <thead>
@@ -52,13 +58,12 @@ const PrePrimary = (): ReactElement => {
                                 )}
                             </>
                         ))}
-
-
                     </tbody>
                 </Table>
-
+                </div>
+           
             </div>
-
+            
         </div>
     )
 }
