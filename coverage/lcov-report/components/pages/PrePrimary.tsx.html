@@ -127,7 +127,8 @@
 <a name='L68'></a><a href='#L68'>68</a>
 <a name='L69'></a><a href='#L69'>69</a>
 <a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -138,7 +139,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
@@ -173,12 +176,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -198,6 +200,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { ReactElement } from 'react'
+import { Link } from 'react-router-dom'
 import SchoolImg from '../SchoolImg'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
@@ -208,8 +211,9 @@ import Table from 'react-bootstrap/Table'
 &nbsp;
 &nbsp;
 &nbsp;
+&nbsp;
 const PrePrimary = (): ReactElement =&gt; {
-    
+   
     const grades = useSelector((state: MainState) =&gt; 
         { <span class="missing-if-branch" title="if path not taken" >I</span>if(state.admission)
             {<span class="cstat-no" title="statement not covered" >return state.admission.value}</span>
@@ -219,15 +223,19 @@ const PrePrimary = (): ReactElement =&gt; {
     const dispatch = useDispatch()
 &nbsp;
     useEffect(() =&gt; {
-        axios.get('http://schoolserver-env.eba-g3pctvxk.us-east-1.elasticbeanstalk.com/api/admission/Pre-primary')
+        axios.get('http://localhost:4000/api/admission/Pre-primary')
             .then(({ data }) =&gt; dispatch(setAdmissionGrades(data)))
             .catch(() =&gt; console.log('Error while fetching'))
     }, [])
 &nbsp;
     return (
         &lt;div&gt;
-            &lt;SchoolImg /&gt;
-            &lt;p&gt;Preprimary&lt;/p&gt;
+                 &lt;div className='left-float'&gt;
+                    &lt;Link to='home' className="link"&gt;Home/&lt;/Link&gt;
+                &lt;/div&gt;
+            {/* &lt;SchoolImg /&gt; */}
+            &lt;p className="heading"&gt;Admission for Preprimary&lt;/p&gt;
+            &lt;div&gt;
             &lt;div className="wd"&gt;
                 &lt;Table striped bordered hover size="sm" className="bg-grey" &gt;
                     &lt;thead&gt;
@@ -238,11 +246,9 @@ const PrePrimary = (): ReactElement =&gt; {
                         &lt;/tr&gt;
                     &lt;/thead&gt;
                     &lt;tbody&gt;
-                        {
-                            grades != null ?
-<span class="branch-0 cbranch-no" title="branch not covered" >                                &lt;&gt;</span>
+             
                                  {                         
-                                grades.map(<span class="fstat-no" title="function not covered" >(g</span>rade) =&gt; (
+                                grades&amp;&amp;<span class="branch-1 cbranch-no" title="branch not covered" >grades.map(<span class="fstat-no" title="function not covered" >(g</span>rade) =&gt; (</span>
 <span class="cstat-no" title="statement not covered" >                            &lt;&gt;</span>
                                 {grade.options.map(<span class="fstat-no" title="function not covered" >(o</span>ption) =&gt;
 <span class="cstat-no" title="statement not covered" >                                    &lt;tr&gt;</span>
@@ -253,15 +259,12 @@ const PrePrimary = (): ReactElement =&gt; {
                                 )}
                             &lt;/&gt;
                         ))}
-&nbsp;
-                                &lt;/&gt; : &lt;&gt;&lt;/&gt;
-                        }
-&nbsp;
                     &lt;/tbody&gt;
                 &lt;/Table&gt;
-&nbsp;
+                &lt;/div&gt;
+           
             &lt;/div&gt;
-&nbsp;
+            
         &lt;/div&gt;
     )
 }
@@ -274,7 +277,7 @@ export default PrePrimary
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Dec 08 2021 10:06:03 GMT+0530 (India Standard Time)
+                at Fri Dec 10 2021 14:51:25 GMT+0530 (India Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

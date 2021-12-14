@@ -22,7 +22,8 @@ const PrePrimary = (): ReactElement => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        axios.get('http://localhost:4000/api/admission/Pre-primary')
+        // axios.get('http://localhost:4000/api/admission/Pre-primary')
+        axios.get('https://serverschool-env.eba-pmxbydww.ap-south-1.elasticbeanstalk.com/api/admission/Pre-primary')
             .then(({ data }) => dispatch(setAdmissionGrades(data)))
             .catch(() => console.log('Error while fetching'))
     }, [])

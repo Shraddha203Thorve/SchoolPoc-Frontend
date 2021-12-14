@@ -17,7 +17,8 @@ const Secondary = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        axios.get('http://localhost:4000/api/admission/Secondary')
+        // axios.get('http://localhost:4000/api/admission/Secondary')
+        axios.get('https://serverschool-env.eba-pmxbydww.ap-south-1.elasticbeanstalk.com/api/admission/Secondary')
             .then(({ data }) => dispatch(setAdmissionGrades(data)))
             .catch(() => console.log('Error while fetching'))
     }, [])
