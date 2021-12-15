@@ -95,12 +95,42 @@
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -136,34 +166,49 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
 import { Link } from 'react-router-dom'
 import SchoolImg from '../SchoolImg'
+import Card from 'react-bootstrap/Card'
 &nbsp;
 const AboutUs = () =&gt; {
     return (
         &lt;div&gt;
-            &lt;div className='left-float'&gt;
-                &lt;Link to='home'&gt;Home/&lt;/Link&gt;
-            &lt;/div&gt;
+&nbsp;
+&nbsp;
             &lt;div className="AboutImg"&gt;
+                &lt;div className='left-float'&gt;
+                    &lt;Link to='home' className="link"&gt;Home/&lt;/Link&gt;
+                &lt;/div&gt;
                 &lt;div className="banner"&gt;
                     &lt;h1&gt;About Us&lt;/h1&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
+&nbsp;
             &lt;div className="contentWhite"&gt;
                 &lt;h2&gt;Our Mission&lt;/h2&gt;
                 &lt;p&gt;The Mission of The Bronx Charter School for Children is to empower our children to achieve their greatest potential both as students and as members of their communities.&lt;/p&gt;
             &lt;/div&gt;
-            &lt;div className="grey-back row"&gt;
-            &lt;div className="col-md-6 mt-3"&gt;
-              &lt;h2 className="brand"&gt;History&lt;/h2&gt;
-                &lt;p className="align"&gt;We launched Learning Curve Public School in 2001 &amp; since then have rapidly changed the face of Pre-Primary,Primary and Secondary education in the City. Our success as one of the leading education service providers raised the expectations of many hopeful parents, who were keen to see their children continue to blossom under our guidance.&lt;/p&gt;
+&nbsp;
+            &lt;div className="bg-light-grey row"&gt;
+                &lt;div className="col-md-6 mt-3"&gt;
+                    &lt;h2 className="brand"&gt;History&lt;/h2&gt;
+                    &lt;p className="align"&gt;We launched Learning Curve Public School in 2001 &amp; since then have rapidly changed the face of Pre-Primary,Primary and Secondary education in the City. Our success as one of the leading education service providers raised the expectations of many hopeful parents, who were keen to see their children continue to blossom under our guidance.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div className="col-md-6 mt-3"&gt;
+                    &lt;h2 className="brand"&gt;Vision&lt;/h2&gt;
+                    &lt;p className="align"&gt;Learning Curve Public School seeks to provide the best place for a child to learn, to grow and to evolve into a balanced and strong individual. The School intends to strive to become a second home for your child. The School located Hinjawadi Pune.&lt;/p&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
-            &lt;div className="col-md-6 mt-3"&gt;
-                &lt;h2 className="brand"&gt;Vision&lt;/h2&gt;
-                &lt;p className="align"&gt;Learning Curve Public School seeks to provide the best place for a child to learn, to grow and to evolve into a balanced and strong individual. The School intends to strive to become a second home for your child. The School located Hinjawadi Pune.&lt;/p&gt;
+            &lt;div&gt;
+                &lt;Card border="light" className="align shadow p-3 mb-5 bg-card rounded" &gt;
+                    {/* &lt;Card.Header&gt;Header&lt;/Card.Header&gt; */}
+                    &lt;Card.Body&gt;
+                        &lt;Card.Img variant="top" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZWR1Y2F0aW9ufGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" height="350px" /&gt;
+                        &lt;Card.Title&gt;About school&lt;/Card.Title&gt;
+                        &lt;Card.Text&gt;
+                            New Pune Public School is the perfect location to deliver quality education. The school provides a clean and conductive atmosphere for the children to learn. The buildings are all modern and spacious and offer the students a very comfortable environment.The education system besides providing an all round education intellectually, socially, emotionally and physically also offers guidance in critical thinking, social openness and purposeful research. Students are given an opportunity to develop their own talent as well as to be aware of national and global issues.
+                        &lt;/Card.Text&gt;
+                    &lt;/Card.Body&gt;
+                &lt;/Card&gt;
             &lt;/div&gt;
-                
-            &lt;/div&gt;
-            
             {/* &lt;SchoolImg/&gt; */}
             {/* &lt;p&gt;About us page&lt;/p&gt; */}
         &lt;/div&gt;
@@ -178,7 +223,7 @@ export default AboutUs
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Dec 06 2021 16:48:46 GMT+0530 (India Standard Time)
+                at Wed Dec 15 2021 09:47:05 GMT+0530 (India Standard Time)
             </div>
         </div>
         <script src="../../../prettify.js"></script>

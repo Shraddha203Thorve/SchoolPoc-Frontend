@@ -1,13 +1,18 @@
+
+/* istanbul ignore file */
+
 import { createSlice,PayloadAction } from "@reduxjs/toolkit";
 
 interface Student{
     _id:string
     name:string,
+    dateofbirth:string,
+    school:string,
     email:string,
-    class:string,
-    rollNo:number,
-    photoid:string,
-    password:string
+    constact:number
+    // rollNo:number,
+    // photoid:string,
+    // password:string
 } 
 interface StudentState{
     value:Student[]

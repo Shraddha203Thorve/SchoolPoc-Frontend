@@ -11,7 +11,7 @@ describe('With React Testing Library', () => {
     const mockStore = configureStore();
     let store;
 
-    it('Shows "Hello world!"', () => {
+    it('render"', () => {
         store = mockStore(initialState);
         const { getByText } = render(
             <Provider store={store}>

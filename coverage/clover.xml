@@ -1,48 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1639128086085" clover="3.2.0">
-  <project timestamp="1639128086085" name="All files">
-    <metrics statements="55" coveredstatements="46" conditionals="14" coveredconditionals="7" methods="31" coveredmethods="25" elements="100" coveredelements="78" complexity="0" loc="55" ncloc="55" packages="2" files="9" classes="9"/>
-    <package name="components">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+<coverage generated="1639541825422" clover="3.2.0">
+  <project timestamp="1639541825422" name="All files">
+    <metrics statements="80" coveredstatements="68" conditionals="14" coveredconditionals="7" methods="44" coveredmethods="32" elements="138" coveredelements="107" complexity="0" loc="80" ncloc="80" packages="4" files="17" classes="17"/>
+    <package name="src">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <file name="App.tsx" path="D:\SchoolWebsite\school-app\src\App.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
       <file name="Footer.tsx" path="D:\SchoolWebsite\school-app\src\components\Footer.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
       </file>
       <file name="Header.tsx" path="D:\SchoolWebsite\school-app\src\components\Header.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
       </file>
       <file name="Home.tsx" path="D:\SchoolWebsite\school-app\src\components\Home.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+      <file name="SchoolImg.tsx" path="D:\SchoolWebsite\school-app\src\components\SchoolImg.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+      <file name="SocialFlow.tsx" path="D:\SchoolWebsite\school-app\src\components\SocialFlow.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="11" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="components.pages">
-      <metrics statements="49" coveredstatements="40" conditionals="14" coveredconditionals="7" methods="28" coveredmethods="22"/>
+    <package name="src.components.pages">
+      <metrics statements="63" coveredstatements="52" conditionals="14" coveredconditionals="7" methods="34" coveredmethods="26"/>
       <file name="AboutUs.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\AboutUs.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
       </file>
       <file name="Admission.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\Admission.tsx">
-        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="5"/>
-        <line num="12" count="1" type="stmt"/>
+        <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="6"/>
         <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
       </file>
       <file name="ContactUs.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\ContactUs.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="GoogleMap.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\GoogleMap.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+      </file>
+      <file name="Marker.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\Marker.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+      </file>
+      <file name="PageNotFound.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\PageNotFound.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
       </file>
       <file name="PrePrimary.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\PrePrimary.tsx">
         <metrics statements="12" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="5"/>
@@ -52,12 +92,12 @@
         <line num="18" count="0" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
       </file>
       <file name="Primary.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\Primary.tsx">
         <metrics statements="12" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="5"/>
@@ -67,12 +107,12 @@
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
       </file>
       <file name="Secondary.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\Secondary.tsx">
         <metrics statements="12" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="5"/>
@@ -82,12 +122,27 @@
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+      </file>
+      <file name="StudentPage.tsx" path="D:\SchoolWebsite\school-app\src\components\pages\StudentPage.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.reducer">
+      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="AdmissionReducer.ts" path="D:\SchoolWebsite\school-app\src\reducer\AdmissionReducer.ts">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="32" count="5" type="stmt"/>
       </file>
     </package>
   </project>

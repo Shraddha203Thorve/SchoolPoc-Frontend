@@ -16,7 +16,7 @@ const GoogleMap = () => {
          <Marker
             lat={18.592092}
             lng={73.734547}
-            name="My Marker"
+            name="LCPS"
             color="#cc0000"
           />
         </GoogleMapReact>

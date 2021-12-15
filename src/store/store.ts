@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { configureStore } from "@reduxjs/toolkit";
 import AdmissionReducer from "../reducer/AdmissionReducer";
 import StudentReducer from "../reducer/StudentReducer";
