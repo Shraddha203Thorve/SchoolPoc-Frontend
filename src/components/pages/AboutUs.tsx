@@ -19,7 +19,7 @@ const AboutUs = () => {
 
             <div className="contentWhite">
                 <h2>Our Mission</h2>
-                <p>The Mission of The Bronx Charter School for Children is to empower our children to achieve their greatest potential both as students and as members of their communities.</p>
+                <p>The Mission of The LCPS for Children is to empower our children to achieve their greatest potential both as students and as members of their communities.</p>
             </div>
 
             <div className="bg-light-grey row">
@@ -39,7 +39,7 @@ const AboutUs = () => {
                         <Card.Img variant="top" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZWR1Y2F0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" height="350px" />
                         <Card.Title>About school</Card.Title>
                         <Card.Text>
-                            New Pune Public School is the perfect location to deliver quality education. The school provides a clean and conductive atmosphere for the children to learn. The buildings are all modern and spacious and offer the students a very comfortable environment.The education system besides providing an all round education intellectually, socially, emotionally and physically also offers guidance in critical thinking, social openness and purposeful research. Students are given an opportunity to develop their own talent as well as to be aware of national and global issues.
+                        LCPS is the perfect location to deliver quality education. The school provides a clean and conductive atmosphere for the children to learn. The buildings are all modern and spacious and offer the students a very comfortable environment.The education system besides providing an all round education intellectually, socially, emotionally and physically also offers guidance in critical thinking, social openness and purposeful research. Students are given an opportunity to develop their own talent as well as to be aware of national and global issues.
                         </Card.Text>
                     </Card.Body>
                 </Card>

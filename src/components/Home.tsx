@@ -16,7 +16,7 @@ const Home = () => {
 
             <div className="mid-background1 shadow p-3 mb-5  rounded mt-3">
                 <p className="brand ">
-                    DPS Pune is one of the most trusted name in quality education, which is recognized throughout the academic world for its progressive approach and commitment to excellence..The school offers courses that focus on holistic development of individuals by cultivating their unique talents.</p>
+                    LCPS Pune is one of the most trusted name in quality education, which is recognized throughout the academic world for its progressive approach and commitment to excellence..The school offers courses that focus on holistic development of individuals by cultivating their unique talents.</p>
             </div>
 
             <div className="container-fluid mt-5 ">
@@ -27,9 +27,9 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title className="brand heading">Welcome to LCPS</Card.Title>
                                 <Card.Text>
-                                    Top schools in Pune have always attracted students from all over the country and abroad, and in such an environment The Orbis Schools are the preferred choice of parents seeking admission to good schools in Pune.
+                                    Top schools in Pune have always attracted students from all over the country and abroad, and in such an environment The LCPS Schools are the preferred choice of parents seeking admission to good schools in Pune.
 
-                                    The school's name, Orbis, which comes from orb, is a metaphor for the world. And our aim as educators is to groom students in harmony with global progress. Today, The Orbis Schools are recognized as one of the best schools in Pune.
+                                    The school's name, LCPS, which comes from orb, is a metaphor for the world. And our aim as educators is to groom students in harmony with global progress. Today, The LCPS Schools are recognized as one of the best schools in Pune.
 
                                     As the world becomes increasingly flat, and cycles of change grow ever shorter, the good schools in Pune and the rest of the country must acquire the ability to keep up. Tomorrow's winners need to be able to bring the change rather than merely react to it.
                                 </Card.Text>
@@ -64,7 +64,7 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title className="brand heading">Celebrate Learning</Card.Title>
                                 <Card.Text>
-                                    Celebrate Learning at The Orbis Schools is a process designed to turn work into play. Limitless opportunities to explore and experiment, get involved in fests and concerts, work for exhibitions and workshops, participate in trips and sports, in an atmosphere which is stress-free, secure, stimulating and rewarding will make learning one's experience of a celebratory kind.
+                                    Celebrate Learning at The LCPS Schools is a process designed to turn work into play. Limitless opportunities to explore and experiment, get involved in fests and concerts, work for exhibitions and workshops, participate in trips and sports, in an atmosphere which is stress-free, secure, stimulating and rewarding will make learning one's experience of a celebratory kind.
                                 </Card.Text>
                             </Card.Body>
                         </Card>

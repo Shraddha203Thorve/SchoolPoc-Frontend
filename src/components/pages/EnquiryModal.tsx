@@ -20,6 +20,7 @@ const EnquiryModal = (props: any) => {
     const [phone, setPhone] = useState('')
     const emailerror = document.getElementById('emailerror')
     const phoneerror = document.getElementById('phoneerror')
+    const studName = document.getElementById('name')
 
     const students = useSelector((state: MainState) => {
         if (state.student) { return state.student.value }
@@ -48,12 +49,16 @@ const EnquiryModal = (props: any) => {
                 icon: 'success',
                 title: 'Your form is submitted,Thank You!!',
                 showConfirmButton: false,
-                timer: 2000
-              }))
+                width:300,
+                timer: 3000
+              })
+              
+              )
             .catch(() => console.log('Error while fetching'))
        
         }
         props.onHide()
+       
     }
 
     function validateEmail() {
@@ -98,7 +103,7 @@ const EnquiryModal = (props: any) => {
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicName">
                             <Form.Label>Full Name of Student</Form.Label>
-                            <Form.Control type="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter full name" />
+                            <Form.Control type="name" id='name' value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter full name" />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
